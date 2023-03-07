@@ -22,6 +22,7 @@ b- nano LunixStatus
 ### To run script #1 :
 
 1- Download my script file
+2- run this command to make the script executable : (chmod +x LunixStatus) in the terminal of the directory that has the script file.
 2- add the script to linux path 
 3- type LunixStatus in terminal as a command 
 4- it will show the welcome view with current date, current user, Linux version,
@@ -41,7 +42,14 @@ and a list of options.
 
 first 0 represents the minute when the command should run , so it means the begging of the hour , second 0 represent the hour when command should run  and here it means it should run at midnight . and starts mean that the command should run everyday  of every month of every day of the week .
 
-### To run script #2 :
+### To run script #2 : 
+
+1- download the script file.
+2- run this command in the terminal of the directory that has the script file to make the script executable : ( chmod +x websiteScript )
+3- run the script by going to the directory that has the script file and then put this (./websiteScript) .
+4- if the website run correctly then ( website is working ) will appear in the log file that appears when run the script in the same directory that has the script.
+
+
 
 
 
