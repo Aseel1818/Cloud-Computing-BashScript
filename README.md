@@ -30,3 +30,12 @@ and a list of options.
 6- any option you choose it will display the result with a sub list that have options from 1-3.
 7- you can type command LunixStatus a h p r , it will show you the result fot the 4 arguments and each argument execute an operation using the same methods that used in list of options from 1-5 .
 8- to exit from script executing choose 3 if you are in sub menu after choose option from options between 1-5 , or choose 5 if you are in the main options list .
+
+---------------------------------------------------------------------------------------------------------------------------------------------## Script #2
+
+### to add the script to the cronJob :
+
+1- run this command at the terminal : crontab -e  to open the corntab editor
+
+
+
