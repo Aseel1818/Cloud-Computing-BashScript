@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# current date for the log file 
+DATE=$(date +%Y%m%d)
+
+# define the log file path
+log_file="/var/log/install_${DATE}.log"
+
+#redirects outputs to the log file
+exec &>> "{log_file}"
+
+#clone website code from Github 
+git clone https://github.com/mkassaf/SimpleApacheApp.git
+
+#install apache2 if it is not installed 
+if ! dpkg -s apache2 >/dev/null 2>&1; then 
+   apt-get update
+   apt-get install -y apache2
+fi
+
+#move the pages of website to apache web root
+rm -rf /var/www/SimpleApp
+mkdir -p /var/www/SimpleApp
+cp -r SimpleApacheApp/App/* /var/www/SimpleApp/
+
+#move the simpleApp.conf to /etc/apache2/sites-available
+cp SimpleApacheApp/simpleApp.conf /etc/apache2/sites-available/
+
+#disable the default apache config and enable the new config.
+a2dissite 000-default.conf
+a2ensite simpleApp.conf
+systemctl reload apache2
+
+#verify working of website
+if curl -s -I http://localhost | head -n 1 | grep -q "200 OK"; then 
+    echo "Website is working "
+else 
+    echo "Website does not working "
+fi
