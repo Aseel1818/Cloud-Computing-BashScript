@@ -45,8 +45,11 @@ first 0 represents the minute when the command should run , so it means the begg
 ### To run script #2 : 
 
 1- download the script file.
-2- run this command in the terminal of the directory that has the script file to make the script executable : ( chmod +x websiteScript )
+
+2- run this command in the terminal of the directory that has the script file to make the script executable : ( chmod +x websiteScript ).
+
 3- run the script by going to the directory that has the script file and then put this (./websiteScript) .
+
 4- if the website run correctly then ( website is working ) will appear in the log file that appears when run the script in the same directory that has the script.
 
 
