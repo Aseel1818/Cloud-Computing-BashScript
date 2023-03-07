@@ -41,7 +41,7 @@ and a list of options.
 
 first 0 represents the minute when the command should run , so it means the begging of the hour , second 0 represent the hour when command should run  and here it means it should run at midnight . and starts mean that the command should run everyday  of every month of every day of the week .
 
-###To run script #2 :
+### To run script #2 :
 
 
 
