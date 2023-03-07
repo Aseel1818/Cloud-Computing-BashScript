@@ -36,6 +36,7 @@ and a list of options.
 ### to add the script to the cronJob :
 
 1- run this command at the terminal : crontab -e  to open the corntab editor. 
+
 2- I add a new line to the corntab file ( 0 0 * * * /home/scripts/websiteScript ) :
 
 first 0 represents the minute when the command should run , so it means the begging of the hour , second 0 represent the hour when command should run  and here it means it should run at midnight . and starts mean that the command should run everyday  of every month of every day of the week .
