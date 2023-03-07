@@ -35,7 +35,7 @@ and a list of options.
 
 ### to add the script to the cronJob :
 
-1- run this command at the terminal : crontab -e  to open the corntab editor
+1- run this command at the terminal : crontab -e  to open the corntab editor.  2- I add a new line to the corntab file ( 0 0 * * * /home/scripts/websiteScript )
 
 
 
